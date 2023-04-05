@@ -4,6 +4,8 @@ CREATE TABLE IF NOT EXISTS users (
   salary DECIMAL(10, 2) NOT NULL
 );
 
+DELETE FROM users;
+
 INSERT INTO users (name, salary) VALUES ('Alice', 2700.00);
 INSERT INTO users (name, salary) VALUES ('Bob', 3200.00);
 INSERT INTO users (name, salary) VALUES ('Carol', 2800.00);
