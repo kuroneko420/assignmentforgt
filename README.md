@@ -3,24 +3,24 @@ A RESTful API developed using Spring Boot to manage user data, including a file 
 
 ## Technologies
 
--     Spring Boot
--     Spring Data JPA
--     H2 Database (file-based storage)
+- Spring Boot
+- Spring Data JPA
+- H2 Database (file-based storage)
 
 ## Testing
 
--     JMeter was used to test the asynchronous functionality of the file upload feature with the following setup:
--         5 concurrent requests
--         CSV file with 1000 records
+- JMeter was used to test the asynchronous functionality of the file upload feature with the following setup:
+-  5 concurrent requests
+-  CSV file with 1000 records
 
 ## Setup
 
-1.     Clone the repository to your local machine.
-2.     Import the project into your favorite IDE.
-3.     Ensure that the application.properties file is set up correctly for a file-based H2 database.
-4.     If you encounter issues with the database initialization, you may need to install the H2 console separately and configure it to create the database schema.
-5.     Run the project using the IDE or the command line (./mvnw spring-boot:run or mvn spring-boot:run).
-6.     The API will be available at http://localhost:8080/api.
+1. Clone the repository to your local machine.
+2. Import the project into your favorite IDE.
+3. Ensure that the application.properties file is set up correctly for a file-based H2 database.
+4. If you encounter issues with the database initialization, you may need to install the H2 console separately and configure it to create the database schema.
+5. Run the project using the IDE or the command line (./mvnw spring-boot:run or mvn spring-boot:run).
+6. The API will be available at http://localhost:8080/api.
 
 ## Usage
 ### Retrieve Users
