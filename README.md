@@ -23,6 +23,7 @@ A RESTful API developed using Spring Boot to manage user data, including a file 
 4. If you encounter issues with the database initialization, you may need to install the H2 console separately and configure it to create the database schema.
 5. Run the project using the IDE or the command line (./mvnw spring-boot:run or mvn spring-boot:run).
 6. The API will be available at http://localhost:8080/api.
+7. The H2 Database console will be available at http://localhost:8080/h2-console/, the username is sa, no password.
 
 ## Usage
 ### Retrieve Users
