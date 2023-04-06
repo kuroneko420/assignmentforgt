@@ -1,0 +1,12 @@
+2023-04-06 17:28:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END [*]ASCLIMIT ? OFFSET ?"; SQL statement:
+SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END ASCLIMIT ? OFFSET ? [42000-214]
+2023-04-06 18:11:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END ASC [*]CASE WHEN ? >= 0 THEN LIMIT ? END OFFSET ?"; SQL statement:
+SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END ASC CASE WHEN ? >= 0 THEN LIMIT ? END OFFSET ? [42000-214]
+2023-04-06 18:26:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Alice"; SQL statement:
+SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END ASC LIMIT ? OFFSET ? [22018-214]
+2023-04-06 18:28:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Alice"; SQL statement:
+SELECT * FROM users u WHERE u.salary >= ? AND u.salary <= ? ORDER BY CASE WHEN ? = 'NAME' THEN u.name WHEN ? = 'SALARY' THEN u.salary ELSE u.id END ASC LIMIT ? OFFSET ? [22018-214]
