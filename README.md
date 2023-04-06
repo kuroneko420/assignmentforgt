@@ -1,5 +1,5 @@
 # Assignment for GT
-A RESTful API developed using Spring Boot to manage user data, including a file upload feature to import user information from CSV files.
+A RESTful API developed using Spring Boot to manage user data, including an asynchronous file upload feature to import user information from CSV files.
 
 ## Technologies
 
